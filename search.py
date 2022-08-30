@@ -15,3 +15,8 @@ r = soup_data.find_all(f'{tag}')
 with open('target-source.txt', 'a') as p:
  p.write('\n,'.join(map(str,r)))
  p.close()
+for link in tag:
+ r = requests.get(link)
+ with open ('crawling.text', 'a') as g:
+  g.write('\n\n' .join(map(str,r)))
+  g.close()

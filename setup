@@ -1,0 +1,12 @@
+apt install python3
+
+apt install toilet
+
+apt install lolcat
+
+git clone https://github.com/Enthernetcode/Termux-Setup
+
+cd Termux-Setup
+
+bash setup
+
